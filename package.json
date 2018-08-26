@@ -1,0 +1,33 @@
+{
+  "name": "blog-vuepress",
+  "version": "1.0.0",
+  "description": "一个相当随便的vuepress上手",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d dist",
+    "deploy:build": "npm run docs:build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmaqingbo/blog-vuepress.git"
+  },
+  "keywords": [
+    "vuepress"
+  ],
+  "author": "wmaqingbo@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmaqingbo/blog-vuepress/issues"
+  },
+  "homepage": "https://github.com/wmaqingbo/blog-vuepress#readme",
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "vuepress": "^0.14.1"
+  }
+}
