@@ -2,7 +2,7 @@
 const javascriptChildren = ['javascript-严格模式', 'ES6模块-和-CommonJS-的区别', 'this指向问题']
 const cssChildren = ['30s-CSS', 'CSS-布局整理']
 const HTTPChildren = ['cookie']
-const booknoteChildren = ['《自卑与超越》']
+const booknoteChildren = ['自卑与超越']
 const othersChildren = ['cmder安装使用', 'Learn more study less', '你不自信的根源是什么', '常见棉被规格']
 
 function genSidebarConfig(childrenArr, path) {
@@ -31,6 +31,7 @@ module.exports = {
   },
   themeConfig: {
     displayAllHeaders: true,
+    lastUpdated: '上次更新',
     nav: [
       {
         text: '文章',
@@ -63,6 +64,7 @@ module.exports = {
         link: 'https://www.douban.com/people/dmaqingbo/'
       }
     ],
+    // sidebarDepth: 0,
     sidebar: {
       '/blog/javascript/': [
         {
