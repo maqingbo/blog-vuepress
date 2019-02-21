@@ -1,27 +1,9 @@
-
-
-### 上手超简单
-
-```bash
-# install
-yarn global add vuepress # OR npm install -g vuepress
-
-# create a markdown file
-echo '# Hello VuePress' > README.md
-
-# start writing
-vuepress dev
-
-# build to static files
-vuepress build
-```
-
-> 引用的内容
-
-::: warning 警告
-警告的内容。
-:::
-
-::: danger 危险
-危险的内容。
-:::
+<div class="features">
+  <div class="feature">
+    <!-- <h2>夜阑卧听键鼠声，原型闭包入梦来。</h2> -->
+    <p>您现在访问的是一个使用 VuePress 搭建的个人博客，博客内容以<code>前端技术</code>为主。</p>
+    <p>博客文章在这儿 → <a href="/javascript/">文章</a>。</p>
+    <p>查看我的开源项目请前往 <a href="https://github.com/wmaqingbo" target="_blank">GitHub</a>。</p>
+    <p>想了解我在影音、书籍方面的喜好，请前往 <a href="https://www.douban.com/people/dmaqingbo/" target="_blank">豆瓣</a>。</p>
+  </div>
+</div>
