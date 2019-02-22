@@ -1,9 +1,5 @@
 ---
-title: JavaScript 严格模式
-comments: true
-date: 2017-07-03 18:18:19
-tags: [javascript,严格模式]
-categories: JavaScript
+title: 'JavaScript 严格模式'
 ---
 
 严格模式是一种将更好的错误检查引入代码中的方法。

@@ -1,9 +1,5 @@
 ---
-title: this指向问题
-comments: true
-date: 2017-10-08 15:55:23
-tags: [this,JavaScript]
-categories: JavaScript
+title: 'this指向问题'
 ---
 这文章，来帮助大家全方位的解读this。让大家对this，有一个正确的，全面的认知。
 
@@ -354,7 +350,7 @@ function Person(name, age) {
 
     // 这里的this指向了谁?
     this.name = name;
-    this.age = age;   
+    this.age = age;
 }
 
 Person.prototype.getName = function() {
@@ -553,13 +549,13 @@ function foo() {
             //这里的getName 将创建到全局window上
     return this;
 }
-foo.getName = function () { console.log(2);};   
+foo.getName = function () { console.log(2);};
         //这个getName和上面的不同，是直接添加到foo上的
 foo.prototype.getName = function () { console.log(3);};
         // 这个getName直接添加到foo的原型上，在用new创建新对象时将直接添加到新对象上
 var getName = function () { console.log(4);};
         // 和foo函数里的getName一样, 将创建到全局window上
-function getName () { console.log(5);}    
+function getName () { console.log(5);}
         // 同上，但是这个函数不会被使用，因为函数声明的提升优先级最高，所以上面的函数表达式将永远替换
         // 这个同名函数，除非在函数表达式赋值前去调用getName()，但是在本题中，函数调用都在函数表达式
         // 之后，所以这个函数可以忽略了

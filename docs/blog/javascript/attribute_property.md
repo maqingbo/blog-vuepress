@@ -1,9 +1,5 @@
 ---
-title: attribute 和 property 的区别
-comments: true
-date: 2017-11-02 20:29:34
-tags: [JavaScript,attributes,properties]
-categories: JavaScript
+title: 'attribute 和 property 的区别'
 ---
 
 `attributes` 属于 HTML。为了易于区别，我们译为`特性`。

@@ -1,9 +1,5 @@
 ---
-title: ES6模块 和 CommonJS 的区别
-comments: true
-date: 2017-09-15 22:36:57
-tags: [ES6,CommonJS,模块]
-categories: JavaScript
+title: 'ES6模块 和 CommonJS 的区别'
 ---
 
 其实就是一个官方的，一个野生的`(*￣3￣)╭`。跟西游记里面的神仙和妖怪差不多，编制内和编制外的问题。编制外的先出现，而且不比编制内的差！

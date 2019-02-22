@@ -1,17 +1,26 @@
 // 文章目录数组
-const javascriptChildren = ['javascript-严格模式', 'ES6模块-和-CommonJS-的区别', 'this指向问题']
-const cssChildren = ['30s-CSS', 'CSS-布局整理']
-const HTTPChildren = ['cookie']
-const booknoteChildren = ['自卑与超越']
-const othersChildren = ['cmder安装使用', 'Learn more study less', '你不自信的根源是什么', '常见棉被规格']
-
-function genSidebarConfig(childrenArr, path) {
-  const newArr = []
-  for (value of childrenArr) {
-    newArr.push(`${path}${value}`)
-  }
-  return newArr
-}
+const javascriptChildren = [
+  '',
+  'javascript_strict',
+  'ES6_module_CommonJS_module',
+  'JavaScript_this',
+  'JavaScript_apply_call',
+  'attribute_property'
+]
+const cssChildren = ['30s_CSS', 'CSS_layout']
+const httpChildren = ['']
+const booknoteChildren = ['Learn_more_study_less', 'What_Life_Could_Mean_to_You']
+const othersChildren = [
+  '',
+  'Fullpage_course',
+  'Root_of_unconfidence',
+  'Common_quilt_specifications',
+  'vue_Internationalized',
+  'Common_cmd_commands',
+  'Quickly_enter_a_field_and_become_amazing',
+  'How_to_rest_effectively',
+  'Weapp_use_fontawespme'
+]
 
 module.exports = {
   base: '/',
@@ -26,9 +35,17 @@ module.exports = {
       }
     ]
   ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': './.vuepress/public'
+      }
+    }
+  },
   markdown: {
     lineNumbers: false
   },
+  // evergreen: true,
   themeConfig: {
     displayAllHeaders: true,
     lastUpdated: '上次更新',
@@ -43,8 +60,8 @@ module.exports = {
             text: 'CSS',
             link: `/blog/css/${cssChildren[0]}`
           }, {
-            text: 'HTTP',
-            link: `/blog/HTTP/${HTTPChildren[0]}`
+            text: 'http',
+            link: `/blog/http/${httpChildren[0]}`
           }, {
             text: '读书笔记',
             link: `/blog/booknote/${booknoteChildren[0]}`
@@ -80,11 +97,11 @@ module.exports = {
           children: cssChildren
         }
       ],
-      '/blog/HTTP/': [
+      '/blog/http/': [
         {
-          title: 'HTTP',
+          title: 'http',
           collapsable: false,
-          children: HTTPChildren
+          children: httpChildren
         }
       ],
       '/blog/booknote/': [
@@ -102,6 +119,5 @@ module.exports = {
         }
       ]
     }
-
   }
 }

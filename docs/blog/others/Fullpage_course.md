@@ -1,18 +1,12 @@
 ---
 title: Fullpage使用指南
-comments: true
-date: 2017-05-17T09:34:21.000Z
-tags:
-  - jquery
-  - 插件
-categories: JavaScript
 ---
 
 Fullpage可以说是目前最好用的全屏滚动插件，很多前端设计师用他制作出了优秀的效果，本文内容将为大家介绍如何快速的使用Fullpage插件，构建自己的全屏单页网站。
 
 <!-- more -->
 
-# 安装插件
+## 安装插件
 
 如果你熟悉`bower`或者`npm`，您可以使用下面的命令安装`Fullpage`
 
@@ -26,7 +20,7 @@ npm install fullpage.js
 
 当然您也可以从 `Fullpage` 的`Github`地址下载得到源文件，这两种方法所获取到的`Fullpage`插件文件是一样的。
 
-# 引入插件文件
+## 引入插件文件
 
 这个插件依赖于jQuery，所以你还需要下载jQuery，并且在Fullpage插件之前引入。
 
@@ -50,7 +44,7 @@ npm install fullpage.js
 
 最后，如果你不想下载到项目中，您可以使用开源项目CDN服务，`Fullpage`在`CDNJS`的地址：<https://cdnjs.com/libraries/fullPage.js>
 
-# 编写HTML代码
+## 编写HTML代码
 
 默认情况下，每一屏幕的代码都需要有DIV包裹，并且设置DIV的类名为`section`，默认情况下，第一个`setion`将作为首页显示在页面上。
 
@@ -80,7 +74,7 @@ Fullpage自带`左右滑动的幻灯片`，只需要在`section`中添加DIV元�
 </div>
 ```
 
-# 初始化Fullpage
+## 初始化Fullpage
 
 使用jQuery的文档加载完毕以后执行函数，初始化Fullpage插件。
 
@@ -157,11 +151,11 @@ $(document).ready(function() {
 });
 ```
 
-# Fullpage方法函数
+## Fullpage方法函数
 
 前面介绍了Fullpage的配置参数，接下来为大家介绍一些Fullpage中的方法函数，这些函数是在插件初始化外调用，不同于回调函数，且不受参数的影响。
 
-## moveSectionUp()
+### moveSectionUp()
 
 设置`section`向上滚动
 
@@ -169,7 +163,7 @@ $(document).ready(function() {
 $.fn.fullpage.moveSectionUp();
 ```
 
-## moveSectionDown()
+### moveSectionDown()
 
 设置`section`向下滚动
 
@@ -177,7 +171,7 @@ $.fn.fullpage.moveSectionUp();
 $.fn.fullpage.moveSectionDown();
 ```
 
-## moveTo(section, slide)
+### moveTo(section, slide)
 
 设置屏幕滚动到某个`section`或者`slide`，两个参数都是某个内容块的索引值或者是锚文本，默认情况下`slide`的索引被设置为`0`。
 
@@ -200,7 +194,7 @@ silentMoveTo(section, slide)
 $.fn.fullpage.silentMoveTo('firstSlide', 2);
 ```
 
-## moveSlideRight()
+### moveSlideRight()
 
 设置幻灯片向右滑动，将下一个幻灯片显示在当前的屏幕中。
 
@@ -208,7 +202,7 @@ $.fn.fullpage.silentMoveTo('firstSlide', 2);
 $.fn.fullpage.moveSlideRight();
 ```
 
-## moveSlideLeft()
+### moveSlideLeft()
 
 设置幻灯片向左滑动，将上一个幻灯片显示在当前的屏幕中。
 
@@ -216,7 +210,7 @@ $.fn.fullpage.moveSlideRight();
 $.fn.fullpage.moveSlideLeft();
 ```
 
-## setAutoScrolling(boolean)
+### setAutoScrolling(boolean)
 
 可以实时的控制页面滚动的方式，可选的参数`false/true`。
 
@@ -226,7 +220,7 @@ $.fn.fullpage.moveSlideLeft();
 $.fn.fullpage.setAutoScrolling(false);
 ```
 
-## setFitToSection(boolean)
+### setFitToSection(boolean)
 
 该函数设置选项`fitToSection`确定是否自适应`section`在屏幕上。
 
@@ -234,7 +228,7 @@ $.fn.fullpage.setAutoScrolling(false);
 $.fn.fullpage.setFitToSection(false);
 ```
 
-## setLockAnchors(boolean)
+### setLockAnchors(boolean)
 
 设置选项`lockAnchors`确定将锚文本锁定到URL中。
 
@@ -242,7 +236,7 @@ $.fn.fullpage.setFitToSection(false);
 $.fn.fullpage.setLockAnchors(false);
 ```
 
-## setAllowScrolling(boolean, [directions])
+### setAllowScrolling(boolean, [directions])
 
 添加或者禁止`Fullpage`自动绑定的鼠标滑轮和移动触摸事件，不过用户任然可以通过键盘和点击快速导航的方式切换`section/slide`。要取消键盘事件你应该使用`setKeyboardScrolling`方法。
 
@@ -259,7 +253,7 @@ $.fn.fullpage.setAllowScrolling(false, 'down');
 $.fn.fullpage.setAllowScrolling(false, 'down, right');
 ```
 
-## setKeyboardScrolling(boolean, [directions])
+### setKeyboardScrolling(boolean, [directions])
 
 添加或者禁止键盘对`section/slide`的控制，这个事件是默认绑定的。
 
@@ -283,7 +277,7 @@ setRecordHistory(boolean)
 $.fn.fullpage.setRecordHistory(false);
 ```
 
-## setScrollingSpeed(milliseconds)
+### setScrollingSpeed(milliseconds)
 
 定义每个`section/slide`滚动的时间，默认的时间单位为毫秒（ms）。
 
@@ -291,7 +285,7 @@ $.fn.fullpage.setRecordHistory(false);
 $.fn.fullpage.setScrollingSpeed(700);
 ```
 
-## destroy(type)
+### destroy(type)
 
 移除`Fullpage`的事件和添加的`HTML/CSS`样式风格，理想的使用在使用`Ajax`加载内容。
 
@@ -305,7 +299,7 @@ $.fn.fullpage.destroy();
 $.fn.fullpage.destroy('all');
 ```
 
-## reBuild()
+### reBuild()
 
 更新DOM结构以适应新的窗口大小或其内容。理想的使用与Ajax调用或外部网站的DOM结构的变化组合。
 
@@ -313,7 +307,7 @@ $.fn.fullpage.destroy('all');
 $.fn.fullpage.reBuild();
 ```
 
-# 资源延时加载
+## 资源延时加载
 
 `fullpage.js`提供了一种懒加载图像，视频和音频元素，所以他们不会放慢您的网站加载或不必要的浪费数据传输。使用延迟加载时，所有这些元素只会加载时进入视口。启用延迟加载，所有你需要做的是改变你的`src`属性的`data-src`如下图所示：
 
@@ -325,11 +319,11 @@ $.fn.fullpage.reBuild();
 </video>
 ```
 
-# Fullpage回调函数
+## Fullpage回调函数
 
 上一节中介绍了`Fullpage`的方法函数，那些函数只适合单独使用，如果想更加详细的控制`Fullpage`，就需要使用回调函数，接下来得文档将为您详细介绍`Fullpage`中的回调函数使用方法和参数。
 
-## afterLoad (anchorLink, index)
+### afterLoad (anchorLink, index)
 
 滚动到某一屏后的回调函数，接收 `anchorLink` 和 `index` 两个参数。
 
@@ -355,7 +349,7 @@ $('#fullpage').fullpage({
 });
 ```
 
-## onLeave (index, nextIndex, direction)
+### onLeave (index, nextIndex, direction)
 
 滚动前的回调函数，接收 `index`、`nextIndex` 和 `direction` 3个参数
 
@@ -393,7 +387,7 @@ $('#fullpage').fullpage({
 });
 ```
 
-## afterRender()
+### afterRender()
 
 这个回调函数只是在生成页面结构的时候调用。这是要用来初始化其他插件或删除任何需要的文件准备好代码的回调（这个插件修改DOM创建得到的结构）。
 
@@ -406,7 +400,7 @@ $('#fullpage').fullpage({
 });
 ```
 
-## afterResize()
+### afterResize()
 
 这个回调函数在窗口发生大小改变的时候被调用，就在部分调整。
 
@@ -419,7 +413,7 @@ $('#fullpage').fullpage({
 });
 ```
 
-## afterSlideLoad (anchorLink, index, slideAnchor, slideIndex)
+### afterSlideLoad (anchorLink, index, slideAnchor, slideIndex)
 
 滚动到某一水平滑块后的回调函数，与 `afterLoad` 类似，接收 `anchorLink、index、slideIndex、direction` 4个参数。
 
@@ -451,7 +445,7 @@ $('#fullpage').fullpage({
 });
 ```
 
-## onSlideLeave (anchorLink, index, slideIndex, direction, nextSlideIndex)
+### onSlideLeave (anchorLink, index, slideIndex, direction, nextSlideIndex)
 
 某一水平滑块滚动前的回调函数，与 `onLeave` 类似，接收 `anchorLink、index、slideIndex、direction` 4个参数。
 
@@ -482,5 +476,7 @@ $('#fullpage').fullpage({
 取消`slide`滑动
 
 你可以设置回调函数`onSlideLeave` 返回`false`，那么他将阻止此次的滑动事件，就像`onLeave`一样。[dwqa-submit-question-form]
+
+---
 
 原文地址：<http://www.binjs.com/archives/542>

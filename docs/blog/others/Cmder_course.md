@@ -1,9 +1,5 @@
 ---
 title: Win 下必备利器之 cmder
-comments: true
-date: 2017-09-19 14:44:45
-tags: [cmder,cmd]
-categories: 其他
 ---
 
 cmder，Win 下超好用的命令行操作工具。
@@ -32,7 +28,8 @@ Windows 自带的`cmd`有如下缺点：
 
 ## 界面介绍
 
-{% qnimg cmder.png %}
+<!-- ![Cmder](~@img/others/cmder.png) -->
+![Cmder](../../.vuepress/public/others/cmder.png)
 
 如上图示编号的部分说明如下：
 

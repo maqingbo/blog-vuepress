@@ -1,9 +1,5 @@
 ---
-title: JS中的apply()和call()
-comments: true
-date: 2017-06-27 16:06:37
-tags: JavaScript
-categories: JavaScript
+title: 'JS中的apply()和call()'
 ---
 
 apply()和call()是JavaScript中常用的两个方法了，今天看到两种很简洁明了的解释，记一下。
