@@ -45,7 +45,7 @@ module.exports = {
   markdown: {
     lineNumbers: false
   },
-  // evergreen: true,
+  evergreen: true,
   themeConfig: {
     displayAllHeaders: true,
     lastUpdated: '上次更新',
