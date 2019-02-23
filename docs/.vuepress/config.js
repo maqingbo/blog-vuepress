@@ -71,15 +71,16 @@ module.exports = {
           }
         ]
       }, {
-        text: '关于',
+        text: '关于我',
         link: '/about/'
-      }, {
-        text: 'GitHub',
-        link: 'https://github.com/wmaqingbo'
-      }, {
-        text: '豆瓣',
-        link: 'https://www.douban.com/people/dmaqingbo/'
       }
+      // , {
+      //   text: 'GitHub',
+      //   link: 'https://github.com/wmaqingbo'
+      // }, {
+      //   text: '豆瓣',
+      //   link: 'https://www.douban.com/people/dmaqingbo/'
+      // }
     ],
     // sidebarDepth: 0,
     sidebar: {
