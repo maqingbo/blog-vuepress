@@ -49,27 +49,24 @@ module.exports = {
   themeConfig: {
     displayAllHeaders: true,
     lastUpdated: '上次更新',
-    nav: [
-      {
+    nav: [{
         text: '文章',
-        items: [
-          {
-            text: 'JavaScript',
-            link: `/blog/javascript/${javascriptChildren[0]}`
-          }, {
-            text: 'CSS',
-            link: `/blog/css/${cssChildren[0]}`
-          }, {
-            text: 'http',
-            link: `/blog/http/${httpChildren[0]}`
-          }, {
-            text: '读书笔记',
-            link: `/blog/booknote/${booknoteChildren[0]}`
-          }, {
-            text: '其他',
-            link: `/blog/others/${othersChildren[0]}`
-          }
-        ]
+        items: [{
+          text: 'JavaScript',
+          link: `/blog/javascript/${javascriptChildren[0]}`
+        }, {
+          text: 'CSS',
+          link: `/blog/css/${cssChildren[0]}`
+        }, {
+          text: 'http',
+          link: `/blog/http/${httpChildren[0]}`
+        }, {
+          text: '读书笔记',
+          link: `/blog/booknote/${booknoteChildren[0]}`
+        }, {
+          text: '其他',
+          link: `/blog/others/${othersChildren[0]}`
+        }]
       }, {
         text: '关于我',
         link: '/about/'
@@ -84,41 +81,31 @@ module.exports = {
     ],
     // sidebarDepth: 0,
     sidebar: {
-      '/blog/javascript/': [
-        {
-          title: 'JavaScript',
-          collapsable: false,
-          children: javascriptChildren
-        }
-      ],
-      '/blog/css/': [
-        {
-          title: 'CSS',
-          collapsable: false,
-          children: cssChildren
-        }
-      ],
-      '/blog/http/': [
-        {
-          title: 'http',
-          collapsable: false,
-          children: httpChildren
-        }
-      ],
-      '/blog/booknote/': [
-        {
-          title: '读书笔记',
-          collapsable: false,
-          children: booknoteChildren
-        }
-      ],
-      '/blog/others/': [
-        {
-          title: '其他',
-          collapsable: false,
-          children: othersChildren
-        }
-      ]
+      '/blog/javascript/': [{
+        title: 'JavaScript',
+        collapsable: false,
+        children: javascriptChildren
+      }],
+      '/blog/css/': [{
+        title: 'CSS',
+        collapsable: false,
+        children: cssChildren
+      }],
+      '/blog/http/': [{
+        title: 'http',
+        collapsable: false,
+        children: httpChildren
+      }],
+      '/blog/booknote/': [{
+        title: '读书笔记',
+        collapsable: false,
+        children: booknoteChildren
+      }],
+      '/blog/others/': [{
+        title: '其他',
+        collapsable: false,
+        children: othersChildren
+      }]
     }
   }
 }
