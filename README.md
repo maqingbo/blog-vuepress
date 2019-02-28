@@ -1,28 +1,7 @@
-## 一个相当随便的vuepress上手.
+## Vuepress 版本的技术博客
 
-地址：https://wmaqingbo.github.io/blog-vuepress/
+之前使用 Hexo 搭建的静态博客，现在使用 Vuepress 了。
 
+前端技术为主，另外包括一些杂七杂八的东西。
 
----
-
-
-## 如何部署到 Github pages
-
-```bash
-npm install -D gh-pages
-```
-
-```javascript
-// package.json 文件上添加脚本命令
-"scripts": {
-  "deploy": "gh-pages -d dist",
-  "deploy:build": "npm run docs:build && gh-pages -d dist"
-}
-```
-
-```bash
-// 打包并推送到 gh-pages 分支
-npm run deploy:build
-
-// 打开你的 Github pages, 地址是 https://<yourname>/github.io/<repo>
-```
+地址：http://rumenglai.cn
