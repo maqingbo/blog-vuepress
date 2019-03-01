@@ -1,5 +1,5 @@
 ---
-title: Vim 基本操作
+title: Vim 入门
 ---
 
 ## 1. vi 的基本概念

@@ -11,6 +11,7 @@ const cssChildren = ['30s_CSS', 'CSS_layout']
 const httpChildren = ['']
 const booknoteChildren = ['Learn_more_study_less', 'What_Life_Could_Mean_to_You']
 const othersChildren = [
+  'vim_start',
   '',
   'Fullpage_course',
   'Root_of_unconfidence',
