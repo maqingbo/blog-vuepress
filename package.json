@@ -1,7 +1,7 @@
 {
   "name": "blog-vuepress",
   "version": "1.0.0",
-  "description": "一个相当随便的vuepress上手",
+  "description": "vuepress博客",
   "main": "index.js",
   "directories": {
     "doc": "docs"
