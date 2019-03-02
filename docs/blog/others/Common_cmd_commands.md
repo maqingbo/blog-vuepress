@@ -12,11 +12,11 @@ categories: 其他
 
 那么这些`Terminal`有什么作用呢？简单的表述就是：用命令行的方式代替图形界面的键鼠操作！
 
-> windows系统下的`cmd`不是很好用，建议安装`cmder`，比系统自带的要强大很多。全安装版 `cmder` 自带了 `msysgit`, 压缩包 23M, 除了 `git` 本身这个命令之外, 里面可以使用大量的 `linux` 命令。详细的安装使用教程可以参考：
+> windows 系统下的`cmd`不是很好用，建议安装`cmder`，比系统自带的要强大很多。全安装版 `cmder` 自带了 `msysgit`, 压缩包 23M, 除了 `git` 本身这个命令之外，里面可以使用大量的 `linux` 命令。详细的安装使用教程可以参考：
 >
-> -   [逆天神器cmder](http://bg.biedalian.com/2014/09/11/cmder.html)
-> -   [Win下必备神器之Cmder](https://www.jeffjade.com/2016/01/13/2016-01-13-windows-software-cmder/)
-> -   [cmder官网](http://cmder.net/)
+> -   [逆天神器 cmder](http://bg.biedalian.com/2014/09/11/cmder.html)
+> -   [Win 下必备神器之 Cmder](https://www.jeffjade.com/2016/01/13/2016-01-13-windows-software-cmder/)
+> -   [cmder 官网](http://cmder.net/)
 
 * * *
 
@@ -24,13 +24,12 @@ categories: 其他
 
 如何打开`cmd`呢？
 
-> 方法0：开始菜单里面找`cmd`命令提示符；
-> 方法1：`win`+`r`组合键打开运行栏，键入`cmd`，回车；
-> 方法2：`shift`+**鼠标右键** ，选择 **在此打开命令提示符**
+> 方法 0：开始菜单里面找`cmd`命令提示符；
+> 方法 1：`win`+`r`组合键打开运行栏，键入`cmd`，回车；
+> 方法 2：`shift`+**鼠标右键** ，选择 **在此打开命令提示符**
 > ...
 
 `cmd`由 **命令** 和 **参数** 组成，每个参数对应不同的实现效果，同时正确地使用多个参数可以实现效果的叠加。在`cmd` 键入`help` 并回车可查看 **`cmd`可用命令列表**，使用 **`help + 命令名`** 可查看该命令的介绍、参数列表与使用方法。
-
 
 ## 定时关机操作
 
@@ -38,7 +37,6 @@ categories: 其他
 *   有关参数：`/s`　 `/t xxx`
 *   用法实例：`shut /s /t 3600`　　一小时后关机
 *   说　　明：`shutdown`命令不仅可以用来设置定时关机，`shutdown`命令还有其他很多其他参数，`/l` `/r` `/g` `/h` 等，可以用于睡眠、注销与重启操作。进一步了解用法，请在`cmd`里键入 `help shutdown` 进行查询。
-
 
 ## 目录跳转
 
@@ -48,7 +46,6 @@ categories: 其他
 *   说　　明：切换当前`cmd`的工作路径到 `D` 盘的 `demo` 文件夹下；路径可用文件夹的相对路径也可以使用文件夹在磁盘的绝对路径。
     注意：`cd` 命令在不加`/D`参数时无法跨磁盘驱动器更改目录的，加上`/D`则可以在硬盘各个分区的各个位置切换。
 
-
 ## 新建文件夹
 
 *   有关命令：`md`/`mkdir`
@@ -56,33 +53,30 @@ categories: 其他
 *   用法实例：`mkdir d:\demo`
 *   说　　明：`mkdir d:\demo` 命令可以在`D`盘根目录下新建一个叫做`demo`的文件夹
 
-
 ## 删除文件夹操作
 
 *   有关命令：`rd`
-*   常用参数：文件夹所在位置/文件夹名
+*   常用参数：文件夹所在位置 / 文件夹名
 *   用法实例：`rd demo`
 *   说　　明：删除`demo` 文件夹！
     注意：`rd`无法删除非空文件夹，所以这个命令是鸡肋！很容易搞得装逼不成反而浪费了自己的时间（`Linux` `Unix` 或者 `DOS` 下用命令删除文件夹则方便的多）
 
-
 ## 删除指定文件
 
 *   有关命令：`del`　`erase`
-*   常用参数：文件路径/文件名
+*   常用参数：文件路径 / 文件名
 *   用法实例：`del d:\demo\demo.txt`　`erase d:\demo\demo.txt`
 *   说　　明：该命令会删除`D`盘`demo`目录下的`demo.txt`
-
 
 ## 查看文档树结构
 
 *   有关命令：`tree`
-*   常用参数：`/f` 文件夹路径/文件名
+*   常用参数：`/f` 文件夹路径 / 文件名
 *   用法实例：`tree d:\demo`
 *   说　　明：`tree d:\demo` 可以查看`demo`目录下的目录层级结构（不显示单独的文件），加上`/f`参数可以将单个文件也显示到文档树上。
 
 ```
-// 使用tree命令生成的目录层级结构
+// 使用 tree 命令生成的目录层级结构
 
 E:.
 ├─css
@@ -96,21 +90,20 @@ E:.
         └─mixins
 ```
 
-
 ## 导出运行结果到文本文档
 
-有时候你想讲命令运行的结果发给别人看，你不想截图而想发送纯文本，奈何 `cmd` 无法像普通文本编辑器一样复制。（cmder是可以复制的）这时该怎么办？
+有时候你想讲命令运行的结果发给别人看，你不想截图而想发送纯文本，奈何 `cmd` 无法像普通文本编辑器一样复制。（cmder 是可以复制的）这时该怎么办？
 
 > 情景：你想看看自己的移动盐盘里面都有哪些纪录片，当然这时你可以打开对应的文件夹，挨个点击查看，更好的办法是使用 `cmd` 来解决问题。
 
-比如我的纪录片放在了`I:\影音`目录下，于是打开`cmd`输入：
+比如我的纪录片放在了`I:\ 影音`目录下，于是打开`cmd`输入：
 
 ```
 I:\
-cd I:\影音
+cd I:\ 影音
 
-I:\影音
-tree /f 纪录片 > C:\Users\我的用户名\desktop\纪录片.txt
+I:\ 影音
+tree /f 纪录片 > C:\Users\ 我的用户名、desktop\ 纪录片。txt
 ```
 
 这时你会发现没有输出结果，但是打开桌面会发现多了一个`list.txt`，里面是所有的纪录片目录！ Excited！
@@ -118,39 +111,39 @@ tree /f 纪录片 > C:\Users\我的用户名\desktop\纪录片.txt
 ```
 // 示例：我的移动硬盘中的纪录片
 
-I:\影音\纪录片
+I:\ 影音、纪录片
 │  [《基础解剖学》.].Anatomy.For.Beginners.ep3[www.xuexi111.com].srt
-│  [基础解剖学].Anatomy.for.Beginners.1.avi
-│  [基础解剖学].Anatomy.for.Beginners.1.srt
-│  植物王国-第一集.720p.BD中英双字幕.rmvb
-│  植物王国-第三集.720p.BD中英双字幕.rmvb
-│  植物王国-第二集.720p.BD中英双字幕.rmvb
+│  [基础解剖学』.Anatomy.for.Beginners.1.avi
+│  [基础解剖学』.Anatomy.for.Beginners.1.srt
+│  植物王国 - 第一集。720p.BD 中英双字幕。rmvb
+│  植物王国 - 第三集。720p.BD 中英双字幕。rmvb
+│  植物王国 - 第二集。720p.BD 中英双字幕。rmvb
 │  
 └─Planet Earth
-        [行星地球01].Planet.Earth.01.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球02].Planet.Earth.02.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球03].Planet.Earth.03.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球04].Planet.Earth.04.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球05].Planet.Earth.05.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球06].Planet.Earth.06.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球07].Planet.Earth.07.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球08].Planet.Earth.08.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球09].Planet.Earth.09.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球10].Planet.Earth.10.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        [行星地球11].Planet.Earth.11.中文字幕.HR-HDTV.AC3.960X528.x264-人人影视.mkv
-        行星地球2.Planet.earth.II.S01E01.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
-        行星地球2.Planet.earth.II.S01E02.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
-        行星地球2.Planet.earth.II.S01E03.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
-        行星地球2.Planet.earth.II.S01E04.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
-        行星地球2.Planet.earth.II.S01E05.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
-        行星地球2.Planet.earth.II.S01E06.END.中英字幕.HR-HDTV.AAC.1024X576.x264.mp4
+        [行星地球 01].Planet.Earth.01. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 02].Planet.Earth.02. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 03].Planet.Earth.03. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 04].Planet.Earth.04. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 05].Planet.Earth.05. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 06].Planet.Earth.06. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 07].Planet.Earth.07. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 08].Planet.Earth.08. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 09].Planet.Earth.09. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 10].Planet.Earth.10. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        [行星地球 11].Planet.Earth.11. 中文字幕。HR-HDTV.AC3.960X528.x264- 人人影视。mkv
+        行星地球 2.Planet.earth.II.S01E01. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
+        行星地球 2.Planet.earth.II.S01E02. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
+        行星地球 2.Planet.earth.II.S01E03. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
+        行星地球 2.Planet.earth.II.S01E04. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
+        行星地球 2.Planet.earth.II.S01E05. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
+        行星地球 2.Planet.earth.II.S01E06.END. 中英字幕。HR-HDTV.AAC.1024X576.x264.mp4
 ```
 
 我们注意到命令运行没有结果出现在`cmd`对话框里，原因在于**转向符** `>`，这个符号的意思是：将命令运行的结果转向导出到特定目录下的特定文本文档（原本没有该文本则会新建）。
 
 ## ipconfig
 
-这个比较简单，就是获取本机详细网络配置信息。IP地址、子网掩码、网关等等。
+这个比较简单，就是获取本机详细网络配置信息。IP 地址、子网掩码、网关等等。
 
 * * *
 

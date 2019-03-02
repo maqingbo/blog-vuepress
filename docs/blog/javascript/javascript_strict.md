@@ -14,7 +14,7 @@ ECMAScript 5 引入严格模式 (`strict mode`) 概念。通过严格模式，�
 
 主要有以下几个：错误检测、规范、效率、安全、面向未来
 
-- 消除 Javascript 语法的一些不合理、不严谨之处，减少一些怪异行为;
+- 消除 Javascript 语法的一些不合理、不严谨之处，减少一些怪异行为；
 - 消除代码运行的一些不安全之处，保证代码运行的安全；
 - 提高编译器效率，增加运行速度；
 - 为未来新版本的 Javascript 做好铺垫。
@@ -25,7 +25,7 @@ ECMAScript 5 引入严格模式 (`strict mode`) 概念。通过严格模式，�
 
 ### 全局开启（不推荐）
 
-为整个 script 标签开启严格模式, 需要在所有语句之前放一个特定语句 `"use strict";`
+为整个 script 标签开启严格模式，需要在所有语句之前放一个特定语句 `"use strict";`
 
 ```
 // 整个语句都开启严格模式的语法
@@ -80,14 +80,11 @@ function notStrict() {
 
 ------------
 
-
-
 别用这些词做 **变量名 **或 **参数名**
 ```
 implements, interface, let, package, private, protected, public, static, yield
 ```
-这些都是保留字，将来 ECMAScript 版本中可能会用到他们，使用这些标识符作为变量名会导致语法错误.
-
+这些都是保留字，将来 ECMAScript 版本中可能会用到他们，使用这些标识符作为变量名会导致语法错误。
 ```javascript
 !function (){
   'use strict';
@@ -116,7 +113,7 @@ implements, interface, let, package, private, protected, public, static, yield
 
 ------------
 
-严格模式下, 试图删除不可删除的属性时会抛出异常
+严格模式下，试图删除不可删除的属性时会抛出异常
 
 ```javascript
 !function (){
@@ -193,11 +190,9 @@ for (index in arr) {
 // Uncaught SyntaxError: Unexpected eval or arguments in strict mode
 ```
 
-
 ------------
 
-严格模式下不允许使用 `with` 语句.
-
+严格模式下不允许使用 `with` 语句。
 ```javascript
 !function (){
   "use strict";

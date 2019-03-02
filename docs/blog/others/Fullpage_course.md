@@ -1,8 +1,8 @@
 ---
-title: Fullpage使用指南
+title: Fullpage 使用指南
 ---
 
-Fullpage可以说是目前最好用的全屏滚动插件，很多前端设计师用他制作出了优秀的效果，本文内容将为大家介绍如何快速的使用Fullpage插件，构建自己的全屏单页网站。
+Fullpage 可以说是目前最好用的全屏滚动插件，很多前端设计师用他制作出了优秀的效果，本文内容将为大家介绍如何快速的使用 Fullpage 插件，构建自己的全屏单页网站。
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ npm install fullpage.js
 
 ## 引入插件文件
 
-这个插件依赖于jQuery，所以你还需要下载jQuery，并且在Fullpage插件之前引入。
+这个插件依赖于 jQuery，所以你还需要下载 jQuery，并且在 Fullpage 插件之前引入。
 
 ```html
 <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
@@ -42,28 +42,25 @@ npm install fullpage.js
 <script type="text/javascript" src="jquery.slimscroll.min.js"></script>
 ```
 
-最后，如果你不想下载到项目中，您可以使用开源项目CDN服务，`Fullpage`在`CDNJS`的地址：<https://cdnjs.com/libraries/fullPage.js>
+最后，如果你不想下载到项目中，您可以使用开源项目 CDN 服务，`Fullpage`在`CDNJS`的地址：<https://cdnjs.com/libraries/fullPage.js>
 
-## 编写HTML代码
+## 编写 HTML 代码
 
-默认情况下，每一屏幕的代码都需要有DIV包裹，并且设置DIV的类名为`section`，默认情况下，第一个`setion`将作为首页显示在页面上。
+默认情况下，每一屏幕的代码都需要有 DIV 包裹，并且设置 DIV 的类名为`section`，默认情况下，第一个`setion`将作为首页显示在页面上。
 
 ```html
 <div id="fullpage">
   <div class="section">Some section</div>
-  <div class="section">Some section</div>
-  <div class="section">Some section</div>
-  <div class="section">Some section</div>
 </div>
 ```
 
-假如你需要让某一个`section`作为首页的第一屏展示，你只需要给这个`section`添加一个`active`的类，Fullpage会自动优先展示这个屏幕，例如定义下面的代码：
+假如你需要让某一个`section`作为首页的第一屏展示，你只需要给这个`section`添加一个`active`的类，Fullpage 会自动优先展示这个屏幕，例如定义下面的代码：
 
 ```html
 <div class="section active">Some section</div>
 ```
 
-Fullpage自带`左右滑动的幻灯片`，只需要在`section`中添加DIV元素，并且给DIV元素添加`slide`类，FUllpage会自动生成幻灯片特效，例如下面的代码：
+Fullpage 自带`左右滑动的幻灯片`，只需要在`section`中添加 DIV 元素，并且给 DIV 元素添加`slide`类，FUllpage 会自动生成幻灯片特效，例如下面的代码：
 
 ```html
 <div class="section">
@@ -74,14 +71,13 @@ Fullpage自带`左右滑动的幻灯片`，只需要在`section`中添加DIV元�
 </div>
 ```
 
-## 初始化Fullpage
+## 初始化 Fullpage
 
-使用jQuery的文档加载完毕以后执行函数，初始化Fullpage插件。
+使用 jQuery 的文档加载完毕以后执行函数，初始化 Fullpage 插件。
 
 ```
 $(document).ready(function() {
   $('#fullpage').fullpage(
-    ...
     ...
   );
 });
@@ -93,11 +89,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#fullpage').fullpage({
     //Navigation
-    menu: false,  // 一个选择器可以用来指定要与滚动互动的导航菜单，有点类似与Bootstrap的滚动监听
+    menu: false,  // 一个选择器可以用来指定要与滚动互动的导航菜单，有点类似与 Bootstrap 的滚动监听
     lockAnchors: false,
-    anchors: [],  // 定义导航的锚文本信息例如['firstPage', 'secondPage'],
-    navigation: false,  // 如果设置为true，那他将会显示一个小圆圈组成的快速导航栏
-    navigationPosition: 'right',  // 结合参数navigation一起使用，用于设置navigation定义的菜单显示的位置，可以设置为left/right。
+    anchors: [],  // 定义导航的锚文本信息例如 ['firstPage', 'secondPage'],
+    navigation: false,  // 如果设置为 true，那他将会显示一个小圆圈组成的快速导航栏
+    navigationPosition: 'right',  // 结合参数 navigation 一起使用，用于设置 navigation 定义的菜单显示的位置，可以设置为 left/right。
     navigationTooltips: ['firstSlide', 'secondSlide'],
     showActiveTooltip: false,
     slidesNavigation: true,
@@ -107,30 +103,30 @@ $(document).ready(function() {
     css3: true,
     scrollingSpeed: 700,  // 每个屏幕滚动动画执行的时间
     autoScrolling: true,  // 定义屏幕是否自动滚动
-    fitToSection: true,  // 设置是否自适应整个窗口的空间，以某个section的内容为分界线
+    fitToSection: true,  // 设置是否自适应整个窗口的空间，以某个 section 的内容为分界线
     scrollBar: false,  // 是否使用浏览器默认的滚动条
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
     loopBottom: false,  // 滚动到最后一个后，是否循环滚动到第一个
     loopTop: false,  // 滚动到第一个后，是否循序滚动到最后一个
     loopHorizontal: true,  // 水平的幻灯片是否循环切换
-    continuousVertical: false,  // 默认值：false，定义向下滚动到最后一节是否应该向下滚动到第一个，如果向上滚动的第一部分应该滚动到最后一个。不兼容loopTop和loopBottom选项。
+    continuousVertical: false,  // 默认值：false，定义向下滚动到最后一节是否应该向下滚动到第一个，如果向上滚动的第一部分应该滚动到最后一个。不兼容 loopTop 和 loopBottom 选项。
     normalScrollElements: '#element1, .element2',
     scrollOverflow: false,
-    touchSensitivity: 15,  // 默认值：5，定义了浏览器窗口的宽度/高度的百分比，多远的触摸滑动可以跳转到下一个section / slide。
+    touchSensitivity: 15,  // 默认值：5，定义了浏览器窗口的宽度/高度的百分比，多远的触摸滑动可以跳转到下一个 section / slide。
     normalScrollElementTouchThreshold: 5,
 
     //Accessibility
-    keyboardScrolling: true,  // 是否可以通过键盘箭头事件控制section的滚动
-    animateAnchor: true, // 默认值：true，定义当网页的URL中有锚文本的时候，是否帮用户定位到对应的section或者slide。
+    keyboardScrolling: true,  // 是否可以通过键盘箭头事件控制 section 的滚动
+    animateAnchor: true, // 默认值：true，定义当网页的 URL 中有锚文本的时候，是否帮用户定位到对应的 section 或者 slide。
     recordHistory: true,  // 默认值：true，定义是否将网页滚动的的状态纪录到浏览器的历史记录中。
 
     //Design
     controlArrows: true,  // 是否使用控制箭头向左或向右移动幻灯片
     verticalCentered: true,  // 是否垂直居中网页的内容
     resize: true,  // 是否在窗口改变大小后，自动调整网页中字体的大小
-    sectionsColor: none;  // 每个section的CSS背景['#ccc', '#fff'],
-    paddingTop: 0,  // 每个section固定的头部留白，在使用固定表头的情况下有用的
+    sectionsColor: none;  // 每个 section 的 CSS 背景 ['#ccc', '#fff'],
+    paddingTop: 0,  // 每个 section 固定的头部留白，在使用固定表头的情况下有用的
     paddingBottom: '10px',
     fixedElements: '#header, .footer',
     responsiveWidth: 0,
@@ -151,9 +147,9 @@ $(document).ready(function() {
 });
 ```
 
-## Fullpage方法函数
+## Fullpage 方法函数
 
-前面介绍了Fullpage的配置参数，接下来为大家介绍一些Fullpage中的方法函数，这些函数是在插件初始化外调用，不同于回调函数，且不受参数的影响。
+前面介绍了 Fullpage 的配置参数，接下来为大家介绍一些 Fullpage 中的方法函数，这些函数是在插件初始化外调用，不同于回调函数，且不受参数的影响。
 
 ### moveSectionUp()
 
@@ -230,7 +226,7 @@ $.fn.fullpage.setFitToSection(false);
 
 ### setLockAnchors(boolean)
 
-设置选项`lockAnchors`确定将锚文本锁定到URL中。
+设置选项`lockAnchors`确定将锚文本锁定到 URL 中。
 
 ```
 $.fn.fullpage.setLockAnchors(false);
@@ -271,7 +267,7 @@ $.fn.fullpage.setKeyboardScrolling(false, 'down, right');
 setRecordHistory(boolean)
 ```
 
-定义是否为每个URL的变更纪录到浏览器中的历史记录中。
+定义是否为每个 URL 的变更纪录到浏览器中的历史记录中。
 
 ```
 $.fn.fullpage.setRecordHistory(false);
@@ -289,7 +285,7 @@ $.fn.fullpage.setScrollingSpeed(700);
 
 移除`Fullpage`的事件和添加的`HTML/CSS`样式风格，理想的使用在使用`Ajax`加载内容。
 
-type：可以被设置为空字符，或者all，如果一旦执行，通过Fullpage添加的HTML/CSS样式和代码都将会被移除，将显示没有使用Fullpage的样式，一个使用过任何插件进行修改。
+type：可以被设置为空字符，或者 all，如果一旦执行，通过 Fullpage 添加的 HTML/CSS 样式和代码都将会被移除，将显示没有使用 Fullpage 的样式，一个使用过任何插件进行修改。
 
 ```
 //destroy any plugin event (scrolls, hashchange in the URL...)
@@ -301,7 +297,7 @@ $.fn.fullpage.destroy('all');
 
 ### reBuild()
 
-更新DOM结构以适应新的窗口大小或其内容。理想的使用与Ajax调用或外部网站的DOM结构的变化组合。
+更新 DOM 结构以适应新的窗口大小或其内容。理想的使用与 Ajax 调用或外部网站的 DOM 结构的变化组合。
 
 ```
 $.fn.fullpage.reBuild();
@@ -312,14 +308,14 @@ $.fn.fullpage.reBuild();
 `fullpage.js`提供了一种懒加载图像，视频和音频元素，所以他们不会放慢您的网站加载或不必要的浪费数据传输。使用延迟加载时，所有这些元素只会加载时进入视口。启用延迟加载，所有你需要做的是改变你的`src`属性的`data-src`如下图所示：
 
 ```
-<img data-src="image.png" alt="FullPage.js完全指南">
+<img data-src="image.png" alt="FullPage.js 完全指南">
 <video>
   <source data-src="video.webm" type="video/webm" />
   <source data-src="video.mp4" type="video/mp4" />
 </video>
 ```
 
-## Fullpage回调函数
+## Fullpage 回调函数
 
 上一节中介绍了`Fullpage`的方法函数，那些函数只适合单独使用，如果想更加详细的控制`Fullpage`，就需要使用回调函数，接下来得文档将为您详细介绍`Fullpage`中的回调函数使用方法和参数。
 
@@ -351,7 +347,7 @@ $('#fullpage').fullpage({
 
 ### onLeave (index, nextIndex, direction)
 
-滚动前的回调函数，接收 `index`、`nextIndex` 和 `direction` 3个参数
+滚动前的回调函数，接收 `index`、`nextIndex` 和 `direction` 3 个参数
 
 - `index` 是离开的`页面`的序号，从`1`开始计算；
 - `nextIndex` 是滚动到的`页面`的序号，从`1`开始计算；
@@ -389,7 +385,7 @@ $('#fullpage').fullpage({
 
 ### afterRender()
 
-这个回调函数只是在生成页面结构的时候调用。这是要用来初始化其他插件或删除任何需要的文件准备好代码的回调（这个插件修改DOM创建得到的结构）。
+这个回调函数只是在生成页面结构的时候调用。这是要用来初始化其他插件或删除任何需要的文件准备好代码的回调（这个插件修改 DOM 创建得到的结构）。
 
 ```
 $('#fullpage').fullpage({
@@ -415,7 +411,7 @@ $('#fullpage').fullpage({
 
 ### afterSlideLoad (anchorLink, index, slideAnchor, slideIndex)
 
-滚动到某一水平滑块后的回调函数，与 `afterLoad` 类似，接收 `anchorLink、index、slideIndex、direction` 4个参数。
+滚动到某一水平滑块后的回调函数，与 `afterLoad` 类似，接收 `anchorLink、index、slideIndex、direction` 4 个参数。
 
 - anchorLink: anchorLink corresponding to the section.
 - index: index of the section. Starting from 1.
@@ -447,7 +443,7 @@ $('#fullpage').fullpage({
 
 ### onSlideLeave (anchorLink, index, slideIndex, direction, nextSlideIndex)
 
-某一水平滑块滚动前的回调函数，与 `onLeave` 类似，接收 `anchorLink、index、slideIndex、direction` 4个参数。
+某一水平滑块滚动前的回调函数，与 `onLeave` 类似，接收 `anchorLink、index、slideIndex、direction` 4 个参数。
 
 - anchorLink: anchorLink corresponding to the section.
 - index: index of the section. Starting from 1.

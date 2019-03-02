@@ -6,10 +6,9 @@ tags: [css, 布局]
 categories: css
 ---
 
-日常开发中经常遇到布局问题，下面记录几种常用的css布局方案。
+日常开发中经常遇到布局问题，下面记录几种常用的 css 布局方案。
 
 本文转自 [segmentfault](https://segmentfault.com/a/1190000010989110)，版权归原作者所有。
-
 
 <!-- more -->
 
@@ -30,7 +29,7 @@ categories: css
 }
 ```
 
-> tips：此方案兼容性较好，可兼容至IE8，对于 IE567 并不支持 inline-block，需要使用css hack 进行兼容
+> tips：此方案兼容性较好，可兼容至 IE8，对于 IE567 并不支持 inline-block，需要使用 css hack 进行兼容
 
 - **table + margin**
 
@@ -41,7 +40,7 @@ categories: css
 }
 ```
 
-> tips：此方案兼容至IE8，可以使用`<table/>`代替css写法，兼容性良好
+> tips：此方案兼容至 IE8，可以使用`<table/>`代替 css 写法，兼容性良好
 
 - **absolute + transform**
 
@@ -57,7 +56,7 @@ categories: css
 }
 ```
 
-> tips：此方案兼容至IE9，因为 transform 兼容性限制，如果`.child`为定宽元素，可以使用以下写法，兼容性极佳
+> tips：此方案兼容至 IE9，因为 transform 兼容性限制，如果`.child`为定宽元素，可以使用以下写法，兼容性极佳
 
 ```css
 .parent{
@@ -84,10 +83,9 @@ categories: css
 }
 ```
 
-> tips：flex是一个强大的css，生而为布局，它可以轻松的满足各种居中、对其、平分的布局要求，但由于现浏览器兼容性问题，此方案很少被使用，但是值得期待浏览器兼容性良好但那一天！
+> tips：flex 是一个强大的 css，生而为布局，它可以轻松的满足各种居中、对其、平分的布局要求，但由于现浏览器兼容性问题，此方案很少被使用，但是值得期待浏览器兼容性良好但那一天！
 
 ## 2、垂直
-
 
 - **table-cell + vertial-align**
 
@@ -113,9 +111,9 @@ categories: css
 }
 ```
 
-> tips：存在css3兼容问题，定宽兼容性良好
+> tips：存在 css3 兼容问题，定宽兼容性良好
 
-如果是定高（假如高100px），可以使用`margin-top： -50px；`。
+如果是定高（假如高 100px），可以使用`margin-top： -50px；`。
 
 - **flex + align-items**
 
@@ -130,7 +128,6 @@ categories: css
 
 ## 3、水平垂直
 
-
 - **inline-block + table-cell + text-align + vertical-align**
 
 ```css
@@ -144,7 +141,7 @@ categories: css
 }
 ```
 
-> tips：兼容至IE8
+> tips：兼容至 IE8
 
 - **absolute + transform**
 
@@ -160,7 +157,7 @@ categories: css
 }
 ```
 
-> tips：兼容性稍差，兼容IE10以上
+> tips：兼容性稍差，兼容 IE10 以上
 
 - **flex**
 
@@ -177,7 +174,6 @@ categories: css
 # 多列布局
 
 ## 1、一列定宽，一列自适应
-
 
 - **float + margin**
 
@@ -241,7 +237,6 @@ categories: css
 
 ## 2、多列定宽，一列自适应
 
-
 - **float + overflow**
 
 ```css
@@ -287,7 +282,6 @@ categories: css
 ```
 
 ## 3、一列不定宽，一列自适应
-
 
 - **float + overflow**
 
@@ -335,7 +329,6 @@ categories: css
 
 ## 4、多列不定宽，一列自适应
 
-
 - **float + overflow**
 
 ```css
@@ -352,7 +345,6 @@ categories: css
 ```
 
 ## 5、等分
-
 
 - **float + margin**
 
@@ -400,7 +392,6 @@ categories: css
 ```
 
 ## 6、多列等高
-
 
 - **float + overflow**
 
@@ -455,7 +446,6 @@ categories: css
 
 # 并排等分，单排对齐靠左布局
 
-
 ## flex
 
 ```css
@@ -482,7 +472,6 @@ categories: css
 > [【方案】圣杯布局&双飞翼布局](https://segmentfault.com/a/1190000011149400)
 
 ## 圣杯布局
-
 
 ```html
 <div class="container">
@@ -540,7 +529,7 @@ categories: css
 
 ------
 
-> 以下所有demo的源码
+> 以下所有 demo 的源码
 > github：[https://github.com/zwwill/css-layout/tree/master/demo-1](https://github.com/zwwill/css-layout/tree/master/demo-1)
-> 链接: [http://pan.baidu.com/s/1cHBH3g ](http://pan.baidu.com/s/1cHBH3g)
-> 密码:obkb
+> 链接：[http://pan.baidu.com/s/1cHBH3g ](http://pan.baidu.com/s/1cHBH3g)
+> 密码：obkb

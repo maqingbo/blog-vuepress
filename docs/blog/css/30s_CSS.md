@@ -10,7 +10,6 @@ categories: CSS
 
 <!-- more -->
 
-
 ## 布局
 
 ### 盒尺寸重置
@@ -38,7 +37,7 @@ html {
 
 ### 等宽高比
 
-给定可变宽度的元素，它将确保其高度以响应的方式保持成比例(即，其宽度与高度的比率保持恒定)。
+给定可变宽度的元素，它将确保其高度以响应的方式保持成比例（即，其宽度与高度的比率保持恒定）。
 
 ```html
 <div class="constant-width-to-height-ratio"></div>
@@ -78,7 +77,7 @@ html {
 }
 ```
 
-### Flexbox垂直居中
+### Flexbox 垂直居中
 
 ```html
 <div class="flexbox-centering">
@@ -115,12 +114,10 @@ html {
 
 ### 计数器
 
-计数器本质上是由CSS维护的变量，其值可以通过CSS规则递增以跟踪它们的使用次数。
+计数器本质上是由 CSS 维护的变量，其值可以通过 CSS 规则递增以跟踪它们的使用次数。
 
 ```HTML
 <ul>
-  <li>List item</li>
-  <li>List item</li>
   <li>List item</li>
 </ul>
 ```
@@ -137,7 +134,7 @@ li::before {
 
 ### 自定义滚动条
 
-在WebKit平台上自定义具有可滚动溢出的文档和元素的滚动条样式。
+在 WebKit 平台上自定义具有可滚动溢出的文档和元素的滚动条样式。
 
 ```HTML
 <div class="custom-scrollbar">
@@ -232,9 +229,9 @@ li::before {
 }
 ```
 
-### 1像素边框
+### 1 像素边框
 
-为元素提供一个边框，宽度等于1个本地设备像素，可以显得非常清晰和清晰。
+为元素提供一个边框，宽度等于 1 个本地设备像素，可以显得非常清晰和清晰。
 
 ```HTML
 <div class="hairline-border">text</div>
@@ -261,9 +258,9 @@ li::before {
 }
 ```
 
-### :非选择器
+### : 非选择器
 
-这`:not` psuedo选择器用于设置一组元素的样式，而保留最后一个(或指定的)元素未设置样式。
+这`:not` psuedo 选择器用于设置一组元素的样式，而保留最后一个（或指定的）元素未设置样式。
 
 ```HTML
 <ul class="css-not-selector-shortcut">
@@ -331,7 +328,7 @@ li:not(:last-child) {
 
 ### 漂亮的文本下划线
 
-比...更好的选择`text-decoration: underline` 其中后代不裁剪下划线。本机实现为`text-decoration-skip-ink: auto` 但它对下划线的控制较少。
+比。.. 更好的选择`text-decoration: underline` 其中后代不裁剪下划线。本机实现为`text-decoration-skip-ink: auto` 但它对下划线的控制较少。
 
 ```HTML
 <p class="pretty-text-underline">Pretty text underline without clipping descending letters.</p>
@@ -358,11 +355,11 @@ li:not(:last-child) {
 }
 ```
 
-> 下划线与文本的距离取决于字体的内部度量，因此必须确保每个人看到相同的字体(即，不会出现基于操作系统而更改的系统字体)。
+> 下划线与文本的距离取决于字体的内部度量，因此必须确保每个人看到相同的字体（即，不会出现基于操作系统而更改的系统字体）。
 
 ### 形状分离器
 
-使用SVG形状分隔两个不同的块，与标准水平分隔相比，可以创建更有趣的视觉外观。
+使用 SVG 形状分隔两个不同的块，与标准水平分隔相比，可以创建更有趣的视觉外观。
 
 ```HTML
 <div class="shape-separator"></div>
@@ -403,7 +400,7 @@ li:not(:last-child) {
 
 ### 三角形
 
-使用纯CSS创建三角形形状。
+使用纯 CSS 创建三角形形状。
 
 ```HTML
 <div class="triangle"></div>
@@ -427,8 +424,6 @@ li:not(:last-child) {
 
 ```HTML
 <div class="bouncing-loader">
-  <div></div>
-  <div></div>
   <div></div>
 </div>
 ```
@@ -528,17 +523,16 @@ li:not(:last-child) {
 ```
 
 > 说明
-1.  `display: inline-block` 使块`p`成为 `inline-block` 以防止下划线跨越整个父级宽度而不仅仅是内容(文本)。
+1.  `display: inline-block` 使块`p`成为 `inline-block` 以防止下划线跨越整个父级宽度而不仅仅是内容（文本）。
 2.  `position: relative` 在元素上为伪元素建立笛卡尔定位上下文。
 3.  `::after` 定义伪元素。
 4.  `position: absolute` 从文档流中取出伪元素，并将其相对于父元素定位。
 5.  `width: 100%` 确保伪元素跨越文本块的整个宽度。
-6.  `transform: scaleX(0)` 最初将伪元素缩放为0，使其没有宽度且不可见。
+6.  `transform: scaleX(0)` 最初将伪元素缩放为 0，使其没有宽度且不可见。
 7.  `bottom: 0` 和`left: 0` 将其放置在块的左下方。
-8.  `transition: transform 0.25s ease-out` 意味着`transform` 变化将通过`ease-out` 时间功能在0.25秒内过渡。
+8.  `transition: transform 0.25s ease-out` 意味着`transform` 变化将通过`ease-out` 时间功能在 0.25 秒内过渡。
 9.  `transform-origin: bottom right` 表示变换锚点位于块的右下方。
-10. `:\hover::after` 然后使用`scaleX(1)` 将宽度转换为100％，然后将`transform-origin` 更改为`bottom left` 以便定位点反转，从而允许其在悬停时转换到另一个方向。
-
+10. `:\hover::after` 然后使用`scaleX(1)` 将宽度转换为 100％，然后将`transform-origin` 更改为`bottom left` 以便定位点反转，从而允许其在悬停时转换到另一个方向。
 
 ## 互动
 
@@ -586,7 +580,7 @@ span {
 ```
 
 > 说明
-1.  `transition: opacity 0.2s` 指定不透明度的更改将在0.2秒内转换。
+1.  `transition: opacity 0.2s` 指定不透明度的更改将在 0.2 秒内转换。
 2.  `.sibling-fade:hover span:not(:hover)` 指定当父项被徘徊时，选择当前没有被徘徊的任何`span`子项并将其不透明度更改为`0.5` 。
 
 ------
