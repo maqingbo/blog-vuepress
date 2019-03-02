@@ -8,7 +8,7 @@ const javascriptChildren = [
   'attribute_property'
 ]
 const cssChildren = ['30s_CSS', 'CSS_layout']
-const httpChildren = ['']
+const protocolChildren = ['']
 const booknoteChildren = ['Learn_more_study_less', 'What_Life_Could_Mean_to_You']
 const othersChildren = [
   'Mac_tree',
@@ -60,8 +60,8 @@ module.exports = {
           text: 'CSS',
           link: `/blog/css/${cssChildren[0]}`
         }, {
-          text: 'http',
-          link: `/blog/http/${httpChildren[0]}`
+          text: 'protocol',
+          link: `/blog/protocol/${protocolChildren[0]}`
         }, {
           text: '读书笔记',
           link: `/blog/booknote/${booknoteChildren[0]}`
@@ -93,10 +93,10 @@ module.exports = {
         collapsable: false,
         children: cssChildren
       }],
-      '/blog/http/': [{
-        title: 'http',
+      '/blog/protocol/': [{
+        title: 'protocol',
         collapsable: false,
-        children: httpChildren
+        children: protocolChildren
       }],
       '/blog/booknote/': [{
         title: '读书笔记',
