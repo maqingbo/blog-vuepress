@@ -56,3 +56,5 @@ var domNodes = Array.prototype.slice.call(document.getElementsByTagName("*"));
 这样`domNodes`就可以应用`Array`下的所有方法了。
 
 > 以上均出自知乎
+
+<Valine></Valine>

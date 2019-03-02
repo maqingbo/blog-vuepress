@@ -476,3 +476,5 @@ $('#fullpage').fullpage({
 ---
 
 原文地址：<http://www.binjs.com/archives/542>
+
+<Valine></Valine>

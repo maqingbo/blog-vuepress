@@ -211,3 +211,5 @@ for (index in arr) {
 
 - [MDN 严格模式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode)
 - [Micorsoft 严格模式](https://msdn.microsoft.com/zh-cn/library/br230269%28v=vs.94%29.aspx)
+
+<Valine></Valine>

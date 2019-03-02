@@ -604,3 +604,5 @@ new new foo().getName ();      // 3
 ------------
 
 参考文章： [全方位解读 this](http://www.jianshu.com/p/d647aa6d1ae6)、[深入理解 this 绑定](https://segmentfault.com/a/1190000011194676#articleHeader2)
+
+<Valine></Valine>

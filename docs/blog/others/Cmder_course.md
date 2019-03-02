@@ -122,3 +122,5 @@ cmd /k "%ConEmuDir%\..\init.bat"  -new_console:d:E:\
 ```
 这个亲测在`cmder.exe`可以，但在`PowerShell.exe`需要另行设置：
 打开文件`config/cmder.lua`（prompt.lua 也有版本是这个），将第二行中的`λ`修改为 Linux 下常用的`$`即可。
+
+<Valine></Valine>

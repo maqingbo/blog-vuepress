@@ -149,3 +149,5 @@ input.getAttribute('value');   // "foo"
 - [阮一峰 - DOM - 属性的操作](http://javascript.ruanyifeng.com/dom/attribute.html#toc8)
 - [Attributes and properties](http://javascript.info/dom-attributes-and-properties)
 - [property 和 attribute 的区别](http://www.jianshu.com/p/rRssiL)
+
+<Valine></Valine>

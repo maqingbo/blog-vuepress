@@ -110,3 +110,5 @@ methods: {
 ```
 
 现在点击按钮便可以切换语言了。
+
+<Valine></Valine>
