@@ -27,13 +27,13 @@ const othersChildren = [
 module.exports = {
   base: '/',
   dest: './dist',
-  title: '入梦来',
-  description: 'wmaqingbo个人博客',
+  title: '懒入膏肓',
+  description: '这么懒还开什么博客',
   head: [
     [
       'link', {
         rel: 'icon',
-        href: `/favicon.png`
+        href: `/chameleon.png`
       }
     ]
   ],
@@ -60,7 +60,7 @@ module.exports = {
           text: 'CSS',
           link: `/blog/css/${cssChildren[0]}`
         }, {
-          text: 'protocol',
+          text: 'HTTP',
           link: `/blog/protocol/${protocolChildren[0]}`
         }, {
           text: '读书笔记',
