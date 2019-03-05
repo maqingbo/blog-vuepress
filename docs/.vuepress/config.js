@@ -1,5 +1,6 @@
 // 文章目录数组
 const javascriptChildren = [
+  'async_await_learn',
   '',
   'javascript_strict',
   'ES6_module_CommonJS_module',
