@@ -28,7 +28,7 @@
   "homepage": "https://github.com/wmaqingbo/blog-vuepress#readme",
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "vuepress": "^0.14.1"
+    "vuepress": "^0.14.11"
   },
   "dependencies": {
     "leancloud-storage": "^3.11.1",
